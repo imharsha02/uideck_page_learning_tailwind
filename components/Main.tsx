@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
 
-const Main = () => {
+const Content = () => {
   return (
-    <div className=" pt-10 pb-10">
-      <h1 className="text-center text-5xl font-bold">Simplify your development process</h1>
-      <div className="container">
-        <div className="shadow-sm"></div>
-      </div>
+    <div className='grid grid-cols-2 mx-auto'>
+      <h1>hi</h1>
+      <h1>hi</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Content
