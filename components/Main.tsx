@@ -5,6 +5,11 @@ import { BsFillCalendarFill } from "react-icons/bs";
 import { AiFillSetting } from "react-icons/ai";
 import { GrMultiple } from "react-icons/gr";
 import { GrUpdate } from "react-icons/gr";
+import {AiOutlineTwitter} from 'react-icons/ai'
+import {BsFacebook} from 'react-icons/bs'
+import {FaTelegram} from 'react-icons/fa'
+import {BsPinterest} from 'react-icons/bs'
+import {FaBuffer} from 'react-icons/fa'
 
 const Content = () => {
   return (
@@ -94,7 +99,7 @@ const Content = () => {
             <div className="flex py-[15px] items-center gap-2"></div>
           </div>
         </div>
-        <div className="bg-white text-xl p-[30px]">
+        <div className="bg-white text-xl p-[30px] mb-[30px]">
           <h3 className="font-bold text-2xl mt-[15px] mb-5">Tags</h3>
           <div className="flex max-w-[32rem] flex-wrap">
             <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">app</p>
@@ -107,7 +112,16 @@ const Content = () => {
             <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">webapp</p>
           </div>
         </div>
-        <div className="bg-white text-xl p-[30px]"></div>
+        <div className="bg-white text-xl p-[30px] mb-[30px]">
+          <h3 className="font-bold text-2xl mt-[10px] mb-[15px]">Share This</h3>
+          <ul className="flex">
+            <li className="mr-[20px] mb-[10px]"><AiOutlineTwitter title="Share Link" className="hover:fill-purple-500 w-6"/></li>
+            <li className="mr-[20px] mb-[10px]"><BsFacebook title="Share Link" className="hover:fill-purple-500 w-6"/></li>
+            <li className="mr-[20px] mb-[10px]"><BsPinterest title="Share Link" className="hover:fill-purple-500 w-6"/></li>
+            <li className="mr-[20px] mb-[10px]"><FaTelegram title="Share Link" className="hover:fill-purple-500 w-6"/></li>
+            <li className="mr-[20px] mb-[10px]"><FaBuffer title="Share Link" className="hover:fill-purple-500 w-6"/></li>
+          </ul>
+        </div>
       </div>
     </div>
   );

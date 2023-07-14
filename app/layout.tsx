@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='h-screen bg-gray-100'>
       <body className={inter.className}>
-        <main>
+        <main className='font-sans'>
           <Header />
           {children}
           <Footer />
