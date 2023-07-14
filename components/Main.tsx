@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Content = () => {
   return (
-    <div className="grid container grid-cols-2 col-span-2 mx-auto gap-10">
+    <div className="flex container mx-auto gap-8">
       <div className="bg-white rounded-md shadow-sm">
         <Image src={nextbaseImage} alt="" height={432} width={854} />
         <div className="p-[30px]">
@@ -34,9 +34,11 @@ const Content = () => {
             <li className="mb-[15px]">12 Months Support</li>
             <li className="pb-[15px]">SCSS Files and Documentation</li>
           </ul>
+          <div className="flex-col">
+
           <Link
             href=""
-            className="px-[50px] py-[17px] text-center font-semibold bg-purple-500 text-white rounded-md"
+            className="px-[50px] py-[17px] text-center font-semibold bg-purple-500 text-white rounded-md w-full"
           >
             Download
           </Link>
@@ -46,8 +48,9 @@ const Content = () => {
           >
             Preview
           </Link>
+          </div>
         </div>
-        <div className="mb-[30px] bg-white"></div>
+        
         <div className="mb-[30px] bg-white">hi</div>
         <div className="mb-[30px] bg-white">hi</div>
         <div className="bg-white">hi</div>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BsFillCartFill } from "react-icons/bs";
 import { AiOutlineDown } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
+import {FaKey} from "react-icons/fa"
 
 const Navbar = () => {
   return (
@@ -55,9 +56,10 @@ const Navbar = () => {
         </div>
         <Link
           href=""
-          className="p-2 rounded-md bg-purple-500 text-white font-semibold"
+          className="flex items-center gap-2 p-2 rounded-md bg-purple-500 text-white font-semibold"
         >
-          All-Access Pass
+          <FaKey className=" fill-white" />
+          <span>All-Access Pass</span>
         </Link>
       </div>
       <div className="flex items-center gap-2">
