@@ -1,7 +1,10 @@
 import Image from "next/image";
 import nextbaseImage from "/public/nextbase_lading_image.png";
 import Link from "next/link";
-import {BsFillCalendarFill} from "react-icons/bs"
+import { BsFillCalendarFill } from "react-icons/bs";
+import { AiFillSetting } from "react-icons/ai";
+import { GrMultiple } from "react-icons/gr";
+import { GrUpdate } from "react-icons/gr";
 
 const Content = () => {
   return (
@@ -50,24 +53,61 @@ const Content = () => {
         </div>
 
         <div className="mb-[30px] bg-purple-500 text-center rounded-sm text-white p-[30px]">
-          <h3 className="text-3xl font-bold my-[15px]">Before You Buy Single</h3>
+          <h3 className="text-3xl font-bold my-[15px]">
+            Before You Buy Single
+          </h3>
           <p className="my-[15px] w-80 font-extralight">
             Get Unlimited Access to 80+ Products Instantly with Commercial
             License and Premium Features
           </p>
           <p className="m-[30px] text-4xl">Save Over 90%</p>
-          <Link href="" className="rounded-md text-purple-500 py-3 px-5 font-semibold bg-white">Get All-Access Pass</Link>
+          <Link
+            href=""
+            className="rounded-md text-purple-500 py-3 px-5 font-semibold bg-white"
+          >
+            Get All-Access Pass
+          </Link>
         </div>
         <div className="mb-[30px] p-[30px] bg-white">
-          <h3 className="font-bold text-2xl mt-[15px] mb-5">Template Parameters</h3>
-          <div className="divide-y-2 divide-gray-200">
-            <div className="flex items-center gap-2">
-              <BsFillCalendarFill className="fill-gray-500"/>
-              <span>Released on: November 4, 2021</span>
+          <h3 className="font-bold text-2xl mt-[15px] mb-5">
+            Template Parameters
+          </h3>
+          <div className="divide-y divide-gray-200">
+            <div className="pb-[15px] flex items-center gap-2">
+              <BsFillCalendarFill className="fill-gray-500" />
+              <p>Released on: November 4, 2021</p>
             </div>
+            <div className="flex py-[15px] items-center gap-2">
+              <GrUpdate className="fill-gray-500" />
+              <p>Last updated on: April 26, 2023</p>
+            </div>
+            <div className="flex py-[15px] items-center gap-2">
+              <AiFillSetting className="fill-gray-500 w-6 h-6" />
+              <p>
+                Built with: <span className="text-blue-500">Tailwind</span>
+              </p>
+            </div>
+            <div className="flex py-[15px] items-center gap-2">
+              <GrMultiple className="fill-gray-500" />
+              <p>Version: 1.1</p>
+            </div>
+            <div className="flex py-[15px] items-center gap-2"></div>
           </div>
         </div>
-        <div className="bg-white text-xl">hi</div>
+        <div className="bg-white text-xl p-[30px]">
+          <h3 className="font-bold text-2xl mt-[15px] mb-5">Tags</h3>
+          <div className="flex max-w-[32rem] flex-wrap">
+            <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">app</p>
+            <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">business</p>
+            <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">clean</p>
+            <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">product</p>
+            <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">saas</p>
+            <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">Software</p>
+            <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">Tailwind</p>
+            <p className="py-[5px] mr-[10px] mb-[10px] px-5 text-blue-500 rounded-full bg-blue-100">webapp</p>
+          </div>
+        </div>
+        <div className="bg-white text-xl p-[30px]"></div>
       </div>
     </div>
   );
