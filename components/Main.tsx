@@ -1,7 +1,7 @@
 import Image from "next/image";
-
 import nextbaseImage from "/public/nextbase_lading_image.png";
 import Link from "next/link";
+import {BsFillCalendarFill} from "react-icons/bs"
 
 const Content = () => {
   return (
@@ -34,7 +34,6 @@ const Content = () => {
             <li className="mb-[15px]">12 Months Support</li>
             <li className="pb-[15px]">SCSS Files and Documentation</li>
           </ul>
-          <div className="flex-col">
 
           <Link
             href=""
@@ -48,12 +47,27 @@ const Content = () => {
           >
             Preview
           </Link>
+        </div>
+
+        <div className="mb-[30px] bg-purple-500 text-center rounded-sm text-white p-[30px]">
+          <h3 className="text-3xl font-bold my-[15px]">Before You Buy Single</h3>
+          <p className="my-[15px] w-80 font-extralight">
+            Get Unlimited Access to 80+ Products Instantly with Commercial
+            License and Premium Features
+          </p>
+          <p className="m-[30px] text-4xl">Save Over 90%</p>
+          <Link href="" className="rounded-md text-purple-500 py-3 px-5 font-semibold bg-white">Get All-Access Pass</Link>
+        </div>
+        <div className="mb-[30px] p-[30px] bg-white">
+          <h3 className="font-bold text-2xl mt-[15px] mb-5">Template Parameters</h3>
+          <div className="divide-y-2 divide-gray-200">
+            <div className="flex items-center gap-2">
+              <BsFillCalendarFill className="fill-gray-500"/>
+              <span>Released on: November 4, 2021</span>
+            </div>
           </div>
         </div>
-        
-        <div className="mb-[30px] bg-white">hi</div>
-        <div className="mb-[30px] bg-white">hi</div>
-        <div className="bg-white">hi</div>
+        <div className="bg-white text-xl">hi</div>
       </div>
     </div>
   );
